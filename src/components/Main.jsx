@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-import './Main.scss';
+import "./Main.scss";
 
 export const Main = () => {
   const calculateTimeLeft = () => {
@@ -34,6 +34,7 @@ export const Main = () => {
 
   return (
     <div className="main">
+
       <div className="main__left">
         <div className="main__left_top">
           <img src={logo} alt="Logo" />
@@ -44,21 +45,22 @@ export const Main = () => {
         </div>
       </div>
       <div className="main__right">
-        <div className="countdown">
-          <div className="countdown__item">
-            {timeLeft.days || '0'} дней
+        <h2>Открытие через...</h2>
+        <div className="main__right_count">
+          <div className="main__item">
+            <p>{timeLeft.days || "0"}</p>
+            <p>дней</p>
           </div>
-          <div className="countdown__item">
-            {timeLeft.hours || '0'} часов
+          <div className="main__item">
+            <p>{timeLeft.hours || "0"}</p>
+            <p>часов</p>
           </div>
-          <div className="countdown__item">
-            {timeLeft.minutes || '0'} минут
-          </div>
-          <div className="countdown__item">
-            {timeLeft.seconds || '0'} секунд
+          <div className="main__item">
+            <p>{timeLeft.minutes || "0"}</p>
+            <p>минут</p>
           </div>
         </div>
-      </div>
+        </div>
     </div>
   );
 };
