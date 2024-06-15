@@ -4,7 +4,7 @@ import "./Main.scss";
 
 export const Main = () => {
   const calculateTimeLeft = () => {
-    const endDate = new Date("2024-07-13T00:00:00"); // 30 дней от 13 июня
+    const endDate = new Date("2024-06-16T00:00:00");
     const now = new Date();
     const difference = endDate - now;
 
@@ -39,7 +39,7 @@ export const Main = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className="main__left_title">
-          <span>Айлин Пулатова - Узбекский Дом Моды и Предметов Роскоши</span> <br />
+          <span>Айлин Пулатова - Узбекский Дом Моды и Предметов Роскоши</span>{" "}
           Изысканные наряды и предметы роскоши, объединяющие узбекские традиции
           и современные тенденции.
         </div>
