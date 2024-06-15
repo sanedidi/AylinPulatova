@@ -34,14 +34,14 @@ export const Main = () => {
 
   return (
     <div className="main">
-
       <div className="main__left">
         <div className="main__left_top">
           <img src={logo} alt="Logo" />
         </div>
         <div className="main__left_title">
-          Индивидуальный пошив и ремонт одежды. Мастера, качество, скорость.
-          Ваши идеи – наша работа!
+          <span>Айлин Пулатова - Узбекский Дом Моды и Предметов Роскоши</span> <br />
+          Изысканные наряды и предметы роскоши, объединяющие узбекские традиции
+          и современные тенденции.
         </div>
       </div>
       <div className="main__right">
@@ -60,7 +60,7 @@ export const Main = () => {
             <p>минут</p>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   );
 };
